@@ -1,0 +1,122 @@
+
+.popup-window-slides{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    background-color: #d7d1d1;
+    display: none;
+
+}
+.popup-window span{
+    position: fixed;
+    top: 1%;
+    right: 25%;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #969595;
+    cursor: pointer;
+    z-index: 102;
+    display: none;
+}
+.popup-window-slides .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+.popup-window img{
+    max-width: 500px;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.slick-dots li button {
+    background-color: #969595;
+}
+.popup-window .slick-arrow {
+    position: fixed;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+.popup-window .slick-arrow.slick-prev {
+    left: 10%;
+    background: url("/img/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+    border: none;
+}
+.popup-window .slick-arrow.slick-next {
+    right: 10%;
+    background: url("/img/long-arrow-right.png") 0 0 / 100% no-repeat;
+    border: none;
+}
+.popup-window .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+.slick-list{
+    margin-top: 2%;
+}
+@media (min-width: 540px) and (orientation:portrait){
+    .popup-window img {
+    max-height: 90%;
+    }
+}
+@media (max-width: 912px) and (orientation:portrait)  {
+    .popup-window img {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+        max-width: 100%;
+
+    }
+    .popup-window span{
+        right: 10px;
+    }
+    .slick-list{
+        margin-top: 5%;
+    }
+    .popup-window span{
+        font-size: 48px;
+        font-weight: normal;
+        color: #807f7f;
+
+    }
+}
+@media all and (orientation:landscape) {
+    .slick-list{
+        margin-top: 3%;
+    }
+    .popup-window img {
+        height: 88vh;
+        width: auto;
+        object-fit: contain;
+
+    }
+    .popup-window span{
+        font-size: 48px;
+        font-weight: normal;
+        color: #807f7f;
+        right: 30%;
+    }
+}
+@media (max-width: 1024px) and (orientation:landscape) {
+    .popup-window span{
+        right: 22%;
+    }
+}
+
+@media (max-width: 768px) and (min-device-width: 768px ) and (orientation:portrait) {
+    .slick-dots{
+        position: relative;
+        bottom: 9%;
+    }
+}
+@media (max-width: 415px) and (orientation:portrait) {
+    .slick-list{
+       margin-top: 20%;
+    }
+}
