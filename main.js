@@ -27,7 +27,7 @@ window.onload = function () {
             dots: true,
             fade: true,
             infinite: true,
-            adaptiveHeight:true
+            adaptiveHeight:false
         })
     )
 
